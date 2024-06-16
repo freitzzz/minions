@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+service="minion.service"
+
+# Copy to root services folder
+sudo cp $service /etc/systemd/system/
+
+# Reload systemd to include service
+sudo systemctl daemon-reload
+
+# Start service on next reboot
+sudo systemctl enable $service

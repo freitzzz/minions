@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+init_paths=(
+    "Workspace/Projects/cobrinhas/send-to-pocket-book/proxy-server"
+)
+
+for path in "${init_paths[@]}"; do bash $path/init; done
