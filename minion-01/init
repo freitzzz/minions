@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
 init_paths=(
-    "Workspace/Projects/cobrinhas/send-to-pocket-book/proxy-server"
-    "Workspace/Projects/cobrinhas/instagram-story-tracker"
+    "${HOME}/Workspace/Projects/cobrinhas/send-to-pocket-book/proxy-server"
+    "${HOME}/Workspace/Projects/cobrinhas/instagram-story-tracker"
 )
 
-for path in "${init_paths[@]}"; do bash $path/init; done
+for path in "${init_paths[@]}"; do (cd $path; bash init); done
