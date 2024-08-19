@@ -2,7 +2,7 @@
 Description=Inits minion-01
 
 [Service]
-User=root
+User=minion
 WorkingDirectory=/home/minion
 ExecStart=bash /home/minion/Workspace/Projects/freitzzz/minions/minion-01/init
 Restart=no
